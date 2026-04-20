@@ -37,88 +37,94 @@ export default function App() {
         <div className="flex-1 mt-16 sm:mt-24 w-full relative flex items-center justify-center min-h-[500px]">
 
           {/* GREEN CARD (Leftmost) */}
-          <div className="absolute top-10 sm:top-1/2 sm:-translate-y-1/2 w-48 sm:w-64 h-[340px] sm:h-[420px] bg-[#378564] rounded-2xl sm:rounded-3xl shadow-xl -rotate-12 -translate-x-[25%] sm:-translate-x-[160%] hover:z-50 hover:-translate-y-5 transition-transform duration-300 p-6 flex flex-col text-white z-10 border-2 border-black/5">
-            <div className="text-2xl sm:text-3xl font-black tracking-tighter mb-6">destiny</div>
-            <ul className="space-y-4 text-sm sm:text-base font-bold opacity-90 flex-1">
-              <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Horoscope matching</li>
-              <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> 360° Astrology</li>
-              <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Compatibility</li>
-              <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Numerology</li>
-              <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Future Reading</li>
-            </ul>
-            {/* Sticker */}
-            <div className="absolute -top-6 -right-6 bg-[#2A2B2A] rounded-xl p-3 shadow-lg rotate-[15deg] border-4 border-white text-white">
-               <Camera className="w-10 h-10" />
-               <Sparkles className="w-4 h-4 absolute -top-1 -left-1 text-white" />
+          <div className="absolute top-1/2 left-1/2 -mt-[170px] sm:-mt-[210px] -ml-[96px] sm:-ml-[128px] w-48 sm:w-64 h-[340px] sm:h-[420px] -translate-x-[110%] sm:-translate-x-[160%] -rotate-12 z-10 hover:z-50 group">
+            <div className="w-full h-full bg-[#378564] rounded-2xl sm:rounded-3xl shadow-xl border-2 border-black/5 p-6 flex flex-col text-white transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:-translate-y-6 group-hover:rotate-6 group-hover:scale-[1.03] group-hover:shadow-2xl">
+              <div className="text-2xl sm:text-3xl font-black tracking-tighter mb-6">destiny</div>
+              <ul className="space-y-4 text-sm sm:text-base font-bold opacity-90 flex-1">
+                <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Horoscope matching</li>
+                <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> 360° Astrology</li>
+                <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Compatibility</li>
+                <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Numerology</li>
+                <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Future Reading</li>
+              </ul>
+              <div className="absolute -top-6 -right-6 bg-[#2A2B2A] rounded-xl p-3 shadow-lg rotate-[15deg] border-4 border-white text-white transition-transform duration-500 group-hover:rotate-[25deg] group-hover:scale-110">
+                 <Camera className="w-10 h-10" />
+                 <Sparkles className="w-4 h-4 absolute -top-1 -left-1 text-white animate-pulse" />
+              </div>
             </div>
           </div>
 
           {/* BLUE CARD (Middle-Left) */}
-          <div className="absolute top-12 sm:top-1/2 sm:-translate-y-1/2 w-48 sm:w-64 h-[360px] sm:h-[440px] bg-[#7F93FC] rounded-2xl sm:rounded-3xl shadow-xl -rotate-6 -translate-x-[10%] sm:-translate-x-[80%] hover:z-50 hover:-translate-y-5 transition-transform duration-300 p-6 flex flex-col text-black z-20 border-2 border-black/5">
-            <div className="text-2xl sm:text-3xl font-black tracking-tighter mb-6 mt-4">connection</div>
-            <ul className="space-y-4 text-sm sm:text-base font-bold opacity-80 flex-1">
-              <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1">✦</span> Shared Interests</li>
-              <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1">✦</span> Deep Talks</li>
-              <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1">✦</span> Communication</li>
-              <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1">✦</span> Emotional Bond</li>
-              <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1">✦</span> Social Battery</li>
-            </ul>
-            {/* Sticker */}
-            <div className="absolute -top-7 -left-1 sm:-left-6 bg-[#FBEF56] rounded-xl p-3 shadow-lg -rotate-[20deg] border-[3px] border-[#DE403B] text-[#DE403B]">
-               <Phone className="w-8 h-8" />
-               <Sparkles className="w-5 h-5 absolute -top-2 -right-2 text-[#DE403B]" />
+          <div className="absolute top-1/2 left-1/2 -mt-[180px] sm:-mt-[220px] -ml-[96px] sm:-ml-[128px] w-48 sm:w-64 h-[360px] sm:h-[440px] -translate-x-[55%] sm:-translate-x-[80%] -rotate-6 z-20 hover:z-50 group">
+            <div className="w-full h-full bg-[#7F93FC] rounded-2xl sm:rounded-3xl shadow-xl border-2 border-black/5 p-6 flex flex-col text-black transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:-translate-y-6 group-hover:rotate-3 group-hover:scale-[1.03] group-hover:shadow-2xl">
+              <div className="text-2xl sm:text-3xl font-black tracking-tighter mb-6 mt-4">connection</div>
+              <ul className="space-y-4 text-sm sm:text-base font-bold opacity-80 flex-1">
+                <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1">✦</span> Shared Interests</li>
+                <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1">✦</span> Deep Talks</li>
+                <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1">✦</span> Communication</li>
+                <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1">✦</span> Emotional Bond</li>
+                <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1">✦</span> Social Battery</li>
+              </ul>
+              <div className="absolute -top-7 -left-1 sm:-left-6 bg-[#FBEF56] rounded-xl p-3 shadow-lg -rotate-[20deg] border-[3px] border-[#DE403B] text-[#DE403B] transition-transform duration-500 group-hover:-rotate-[10deg] group-hover:scale-110">
+                 <Phone className="w-8 h-8" />
+                 <Sparkles className="w-5 h-5 absolute -top-2 -right-2 text-[#DE403B] animate-pulse" />
+              </div>
             </div>
           </div>
 
           {/* PLUM CARD (Middle-Right) */}
-          <div className="absolute top-12 sm:top-1/2 sm:-translate-y-1/2 w-48 sm:w-64 h-[360px] sm:h-[440px] bg-[#A82B56] rounded-2xl sm:rounded-3xl shadow-xl rotate-6 translate-x-[10%] sm:translate-x-[80%] hover:z-50 hover:-translate-y-5 transition-transform duration-300 p-6 flex flex-col text-white z-20 border-2 border-black/5 mt-4 sm:mt-8">
-            <div className="text-2xl sm:text-3xl font-black tracking-tighter mb-6 mt-4 leading-tight">romance<br/>production</div>
-            <div className="w-full h-0.5 bg-white/30 mb-6"></div>
-            <ul className="space-y-4 text-sm sm:text-base font-bold opacity-90 flex-1">
-              <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Dinner Dates</li>
-              <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Love Letters</li>
-              <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Hidden Gifts</li>
-              <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Weekend Trips</li>
-            </ul>
-            {/* Sticker */}
-            <div className="absolute -top-9 right-[15%] bg-[#EBFF7A] rounded-xl p-3 shadow-lg -rotate-[10deg] border-2 border-transparent text-[#E33939]">
-               <Hand className="w-10 h-10" />
+          <div className="absolute top-1/2 left-1/2 -mt-[170px] sm:-mt-[210px] -ml-[96px] sm:-ml-[128px] w-48 sm:w-64 h-[360px] sm:h-[440px] translate-x-[55%] sm:translate-x-[80%] rotate-6 z-20 hover:z-50 group">
+            <div className="w-full h-full bg-[#A82B56] rounded-2xl sm:rounded-3xl shadow-xl border-2 border-black/5 p-6 flex flex-col text-white transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:-translate-y-6 group-hover:-rotate-3 group-hover:scale-[1.03] group-hover:shadow-2xl">
+              <div className="text-2xl sm:text-3xl font-black tracking-tighter mb-6 mt-4 leading-tight">romance<br/>production</div>
+              <div className="w-full h-0.5 bg-white/30 mb-6"></div>
+              <ul className="space-y-4 text-sm sm:text-base font-bold opacity-90 flex-1">
+                <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Dinner Dates</li>
+                <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Love Letters</li>
+                <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Hidden Gifts</li>
+                <li className="flex gap-2 items-start"><Sparkles className="w-4 h-4 shrink-0 mt-1" /> Weekend Trips</li>
+              </ul>
+              <div className="absolute -top-9 right-[15%] bg-[#EBFF7A] rounded-xl p-3 shadow-lg -rotate-[10deg] border-2 border-transparent text-[#E33939] transition-transform duration-500 group-hover:rotate-[0deg] group-hover:scale-110">
+                 <Hand className="w-10 h-10" />
+              </div>
             </div>
           </div>
 
           {/* PINK CARD (Rightmost) */}
-          <div className="absolute top-10 sm:top-1/2 sm:-translate-y-1/2 w-48 sm:w-64 h-[340px] sm:h-[420px] bg-[#ECA6FF] rounded-2xl sm:rounded-3xl shadow-xl space-y-4 rotate-12 translate-x-[25%] sm:translate-x-[160%] hover:z-50 hover:-translate-y-5 transition-transform duration-300 p-6 flex flex-col text-black z-10 border-2 border-black/5 mt-6 sm:mt-16">
-            <div className="text-2xl sm:text-3xl font-black tracking-tighter mb-4 mt-8 leading-tight">with<br/>partners</div>
-            <div className="w-[80%] h-1 bg-black mb-1"></div>
-            <div className="w-[60%] h-0.5 bg-black/50 mb-6"></div>
-            <ul className="space-y-4 text-sm sm:text-base font-bold opacity-80 flex-1">
-              <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1 text-black font-black">✦</span> Long-term goals</li>
-              <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1 text-black font-black">✦</span> Shared Accounts</li>
-              <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1 text-black font-black">✦</span> Moving in</li>
-              <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1 text-black font-black">✦</span> Growing old</li>
-            </ul>
-            {/* Sticker */}
-            <div className="absolute -top-4 -right-4 bg-[#76264A] rounded-2xl p-4 shadow-[0_8px_0_#FFF] rotate-[20deg] text-[#FFF]">
-               <HeartBubble className="w-8 h-8 fill-white" />
-               <Sparkles className="w-5 h-5 absolute -top-1 -left-2 text-white" />
+          <div className="absolute top-1/2 left-1/2 -mt-[150px] sm:-mt-[190px] -ml-[96px] sm:-ml-[128px] w-48 sm:w-64 h-[340px] sm:h-[420px] translate-x-[110%] sm:translate-x-[160%] rotate-12 z-10 hover:z-50 group">
+            <div className="w-full h-full bg-[#ECA6FF] rounded-2xl sm:rounded-3xl shadow-xl border-2 border-black/5 p-6 flex flex-col text-black transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:-translate-y-6 group-hover:-rotate-6 group-hover:scale-[1.03] group-hover:shadow-2xl">
+              <div className="text-2xl sm:text-3xl font-black tracking-tighter mb-4 mt-8 leading-tight">with<br/>partners</div>
+              <div className="w-[80%] h-1 bg-black mb-1"></div>
+              <div className="w-[60%] h-0.5 bg-black/50 mb-6"></div>
+              <ul className="space-y-4 text-sm sm:text-base font-bold opacity-80 flex-1">
+                <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1 text-black font-black">✦</span> Long-term goals</li>
+                <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1 text-black font-black">✦</span> Shared Accounts</li>
+                <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1 text-black font-black">✦</span> Moving in</li>
+                <li className="flex gap-2 items-start"><span className="text-lg leading-none shrink-0 mt-1 text-black font-black">✦</span> Growing old</li>
+              </ul>
+              <div className="absolute -top-4 -right-4 bg-[#76264A] rounded-2xl p-4 shadow-[0_8px_0_#FFF] rotate-[20deg] text-[#FFF] transition-transform duration-500 group-hover:rotate-[10deg] group-hover:scale-110">
+                 <HeartBubble className="w-8 h-8 fill-white" />
+                 <Sparkles className="w-5 h-5 absolute -top-1 -left-2 text-white animate-pulse" />
+              </div>
             </div>
           </div>
 
           {/* ORANGE CARD (Center - Highest Z-Index) Contains The Calculator */}
-          <div className="absolute top-0 sm:top-1/2 sm:-translate-y-1/2 w-64 sm:w-[320px] h-[400px] sm:h-[480px] bg-[#FE5C36] rounded-[2rem] sm:rounded-[3rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] z-40 transition-transform duration-300 p-6 sm:p-8 flex flex-col text-white border-2 border-black/5 mb-10 sm:mb-0 hover:-translate-y-2">
-             {/* Sticker */}
-             <div className="absolute -top-7 sm:-top-7 -right-2 sm:-right-6 bg-[#6389FE] rounded-full p-2 shadow-lg rotate-[8deg] border-[3px] border-white text-white z-50">
-               <Smile className="w-12 h-12" />
-            </div>
-            
-            <div className="text-2xl sm:text-3xl font-black text-black tracking-tighter mb-4 text-center">calculator</div>
-            <div className="w-full h-0.5 bg-black/20 mb-6 relative">
-              <div className="absolute left-1/2 top-0 w-1/3 h-0.5 bg-black -translate-x-1/2"></div>
-            </div>
-            
-            {/* Embedded Form Component */}
-            <div className="flex-1 w-full flex items-center justify-center relative">
-               <LoveCalculator />
+          <div className="absolute top-1/2 left-1/2 -mt-[200px] sm:-mt-[240px] -ml-[128px] sm:-ml-[160px] w-64 sm:w-[320px] h-[400px] sm:h-[480px] z-40 group hover:z-50">
+            <div className="w-full h-full bg-[#FE5C36] rounded-[2rem] sm:rounded-[3rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.4)] border-2 border-black/5 p-6 sm:p-8 flex flex-col text-white transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:-translate-y-4 group-hover:scale-[1.02] group-hover:shadow-[0_45px_75px_-15px_rgba(0,0,0,0.5)]">
+               {/* Sticker */}
+               <div className="absolute -top-7 sm:-top-7 -right-2 sm:-right-6 bg-[#6389FE] rounded-full p-2 shadow-lg rotate-[8deg] border-[3px] border-white text-white z-50 transition-transform duration-500 group-hover:rotate-[15deg] group-hover:scale-110">
+                 <Smile className="w-12 h-12" />
+              </div>
+              
+              <div className="text-2xl sm:text-3xl font-black text-black tracking-tighter mb-4 text-center">calculator</div>
+              <div className="w-full h-0.5 bg-black/20 mb-6 relative">
+                <div className="absolute left-1/2 top-0 w-1/3 h-0.5 bg-black -translate-x-1/2"></div>
+              </div>
+              
+              {/* Embedded Form Component */}
+              <div className="flex-1 w-full flex items-center justify-center relative">
+                 <LoveCalculator />
+              </div>
             </div>
           </div>
           
