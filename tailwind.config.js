@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Outfit', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
+      },
       animation: {
         blob: "blob 7s infinite",
       },
