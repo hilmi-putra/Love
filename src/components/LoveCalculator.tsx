@@ -17,6 +17,17 @@ export default function LoveCalculator() {
   const calculateLove = (name1: string, name2: string) => {
     const n1 = name1.trim().toLowerCase();
     const n2 = name2.trim().toLowerCase();
+
+    const isDevaYushi = (n1 === 'deva' && n2 === 'yushi') || (n1 === 'yushi' && n2 === 'deva');
+
+    if (isDevaYushi) {
+      return {
+        score: '∞',
+        message: 'Infinite love! A bond that defies all logic and spans across eternity.',
+        special: true,
+      };
+    }
+
     const isSpecial = n1 === 'hilmi' || n2 === 'hilmi' || n1 === 'lail' || n2 === 'lail';
 
     if (isSpecial) {
