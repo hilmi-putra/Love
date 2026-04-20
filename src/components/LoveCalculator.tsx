@@ -203,12 +203,12 @@ export default function LoveCalculator() {
                 className="text-center space-y-6 py-6"
               >
                 <DialogHeader>
-                  <DialogTitle className="text-2xl text-center text-gray-800 font-bold mb-2">
+                  <DialogTitle className="text-2xl text-center text-gray-800 font-bold mb-2 break-words">
                     {name1} <span className="text-pink-500 px-2">&</span> {name2}
                   </DialogTitle>
                 </DialogHeader>
 
-                <div className="relative inline-block">
+                <div className="relative inline-block w-full">
                   <motion.div
                     animate={result.special ? { 
                       scale: [1, 1.2, 1],
@@ -219,12 +219,12 @@ export default function LoveCalculator() {
                     transition={{ repeat: Infinity, duration: result.special ? 0.5 : 1.5 }}
                     className="absolute inset-0 bg-pink-200 rounded-full blur-2xl opacity-50"
                   />
-                  <div className="relative text-5xl font-black text-transparent bg-clip-text bg-gradient-to-br from-pink-500 via-rose-500 to-red-500 p-4">
+                  <div className={`relative font-black text-transparent bg-clip-text bg-gradient-to-br from-pink-500 via-rose-500 to-red-500 p-4 break-all ${result.special ? 'text-3xl sm:text-4xl leading-tight' : 'text-5xl'}`}>
                     {result.score}%
                   </div>
                 </div>
 
-                <DialogDescription className="text-lg text-gray-700 font-medium px-4 leading-relaxed">
+                <DialogDescription className="text-lg text-gray-700 font-medium px-4 leading-relaxed break-words">
                   {result.message}
                 </DialogDescription>
 
